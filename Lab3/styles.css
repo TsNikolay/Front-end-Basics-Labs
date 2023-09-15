@@ -1,13 +1,13 @@
 html,
 body {
   height: 100%;
-  overflow: hidden;
 }
 
 .container {
   width: 50%;
   height: 80%;
   margin: 30px auto;
+  padding: 30px;
 }
 
 .image1 {
@@ -33,6 +33,45 @@ body {
 
 .text2 {
   float: left;
+  background-color: rgb(221, 255, 162);
+  width: 100%;
+  height: 17%;
+}
+
+.container2 {
+  width: 50%;
+  height: 80%;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.sub-container {
+  width: 100%;
+  height: 66%;
+  display: flex;
+}
+
+.image3 {
+  flex: 1;
+  background-color: rgb(58, 231, 231);
+  width: 25%;
+  height: 100%;
+}
+
+.text3 {
+  flex: 3;
+  background-color: rgb(161, 214, 255);
+  width: 75%;
+  height: 100%;
+}
+
+.image4 {
+  background-color: rgb(79, 73, 154);
+  width: 100%;
+  height: 17%;
+}
+
+.text4 {
   background-color: rgb(221, 255, 162);
   width: 100%;
   height: 17%;
