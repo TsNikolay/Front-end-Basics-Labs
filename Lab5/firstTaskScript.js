@@ -1,9 +1,10 @@
-const button = document.querySelector(".submit");
+const submitButton = document.querySelector(".submit");
 const inputs = document.querySelectorAll("input");
-
-button.addEventListener("click", () => {
-  checkInputs();
-});
+const fullName = document.querySelector(".full-name");
+const idCard = document.querySelector(".id-card");
+const faculty = document.querySelector(".faculty");
+const birthday = document.querySelector(".birthday");
+const address = document.querySelector(".address");
 
 inputs.forEach((input) => {
   input.addEventListener("click", () => {
@@ -11,35 +12,41 @@ inputs.forEach((input) => {
   });
 });
 
-function checkInputs() {
-  const name = document.querySelector(".full-name");
-  const idCard = document.querySelector(".id-card");
-  const faculty = document.querySelector(".faculty");
-  const birthday = document.querySelector(".birthday");
-  const address = document.querySelector(".address");
+submitButton.addEventListener("click", () => {
+  checkInputs();
+});
 
+function checkInputs() {
   const patterns = {
-    name: /^.+ [A-Za-zА-Яа-яЁҐЄІЇ]\.[A-Za-zА-Яа-я]\.$/,
+    fullName: /^.+ [A-Za-zА-Яа-яЁҐЄІЇ]\.[A-Za-zА-Яа-я]\.$/,
     idCard: /^[A-Za-zА-Яа-яЁҐЄІЇ]{2} №\d{6}$/,
     faculty: /^[A-Za-zА-Яа-яЁҐЄІЇ]+$/,
     birthday: /^\d{2}\.\d{2}\.\d{4}$/,
     address: /^м\.\s[A-ZА-ЯЁҐЄІЇ][a-zа-яёєії]*$/,
   };
 
-  checkInput(patterns.name, name, ".correct-name");
-  checkInput(patterns.idCard, idCard, ".correct-idCard");
-  checkInput(patterns.faculty, faculty, ".correct-faculty");
-  checkInput(patterns.birthday, birthday, ".correct-birthday");
-  checkInput(patterns.address, address, ".correct-address");
+  const classesNames = {
+    fullName: ".correct-name",
+    idCard: ".correct-idCard",
+    faculty: ".correct-faculty",
+    birthday: ".correct-birthday",
+    address: ".correct-address",
+  };
+
+  checkInput(patterns.fullName, fullName, classesNames.fullName);
+  checkInput(patterns.idCard, idCard, classesNames).idCard;
+  checkInput(patterns.faculty, faculty, classesNames.faculty);
+  checkInput(patterns.birthday, birthday, classesNames.birthday);
+  checkInput(patterns.address, address, classesNames.address);
 }
 
 function checkInput(pattern, enteredData, className) {
-  const field = document.querySelector(className);
+  const resultLineValue = document.querySelector(className).textContent;
 
   if (pattern.test(enteredData.value)) {
-    if (field.textContent.includes(enteredData.value)) {
+    if (resultLineValue.includes(enteredData.value)) {
     } else {
-      field.textContent += enteredData.value;
+      resultLineValue += enteredData.value;
     }
     enteredData.style.color = "#00FF00";
   } else {
