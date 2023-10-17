@@ -30,7 +30,6 @@ const zoomInButton = document.querySelector(".zoomInButton");
 zoomInButton.addEventListener("click", () => {
   imgWidth += 100;
   image.style.width = imgWidth + "px";
-  image.style.height = "auto";
 });
 
 const zoomOutButton = document.querySelector(".zoomOutButton");
@@ -38,7 +37,5 @@ zoomOutButton.addEventListener("click", () => {
   if (imgWidth > 50) {
     imgWidth -= 100;
     image.style.width = imgWidth + "px";
-    image.style.height = "auto";
-    console.log(imgWidth);
   }
 });
