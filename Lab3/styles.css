@@ -1,78 +1,67 @@
+/*Спільне для обох завдань*/
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
-  height: 100%;
+  font-size: 34px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: rgb(184, 177, 173);
 }
 
-.container {
-  width: 50%;
-  height: 80%;
-  margin: 30px auto;
-  padding: 30px;
-}
-
-.image1 {
+.vertical-image {
   background-color: rgb(58, 231, 231);
-  float: left;
   width: 25%;
-  height: 66%;
+  height: auto;
 }
 
-.text1 {
-  background-color: rgb(161, 214, 255);
-  float: left;
-  width: 75%;
-  height: 66%;
-}
-
-.image2 {
-  float: left;
+.horizontal-image {
   background-color: rgb(79, 73, 154);
   width: 100%;
-  height: 17%;
+  height: auto;
 }
 
-.text2 {
-  float: left;
-  background-color: rgb(221, 255, 162);
-  width: 100%;
-  height: 17%;
+.vertical-text {
+  background-color: rgb(65, 65, 65);
+  width: 75%;
+  height: auto;
+  text-align: center;
+  padding: 10% 5%;
 }
 
-.container2 {
-  width: 50%;
-  height: 80%;
-  margin: 30px auto;
-  padding: 30px;
+.horizontal-text {
+  background-color: rgb(120, 120, 119);
+  margin-top: -10px;
+  height: auto;
+  text-align: center;
+  padding: 10px 20px;
 }
 
-.sub-container {
-  width: 100%;
-  height: 66%;
+/*Перше завдання*/
+.float-elements {
   display: flex;
 }
 
-.image3 {
-  flex: 1;
-  background-color: rgb(58, 231, 231);
-  width: 25%;
-  height: 100%;
+.image1 {
+  float: left;
 }
 
-.text3 {
-  flex: 3;
-  background-color: rgb(161, 214, 255);
-  width: 75%;
-  height: 100%;
+.text1 {
+  float: left;
 }
 
-.image4 {
-  background-color: rgb(79, 73, 154);
-  width: 100%;
-  height: 17%;
+/*Друге завдання*/
+.container2 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
-.text4 {
-  background-color: rgb(221, 255, 162);
-  width: 100%;
-  height: 17%;
+.flex-elements {
+  display: flex;
 }
