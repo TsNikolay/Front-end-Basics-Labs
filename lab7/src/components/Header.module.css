@@ -1,0 +1,52 @@
+.authorInfo {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.authorName h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.authorBirthday p,
+.authorSecondaryEdu p,
+.authorHigherEdu p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.authorHigherEdu p {
+    margin-left: 4%;
+}
+
+.authorSecondaryEdu p {
+    margin-left: 4%;
+}
+
+.authorHobbies p,
+.authorMovies p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.authorFavCity {
+    margin-top: 20px;
+}

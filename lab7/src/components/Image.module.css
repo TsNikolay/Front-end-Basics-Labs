@@ -1,0 +1,38 @@
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons {
+    margin: 20px 0;
+
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button{
+    margin: 2px;
+    color: white;
+}
+
+.addButton {
+    background-color: #4caf50;
+}
+
+.zoomInButton {
+    background-color: #3498db;
+}
+
+.zoomOutButton {
+    background-color: #e67e22;
+}
+
+.deleteButton {
+    background-color: #e74c3c;
+}
