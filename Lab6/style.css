@@ -1,0 +1,60 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #282525;
+  padding: 25px 80px;
+}
+
+.usersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.userCard {
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #ffffff;
+  width: 250px;
+  text-align: center;
+  transition: box-shadow 0.2s ease-in-out;
+  margin: 25px;
+}
+
+.userCard:hover {
+  box-shadow: 0 0 20px rgb(124, 120, 120);
+}
+
+.userCard img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.userCard h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+.userCard p {
+  font-size: 1em;
+  margin: 10px 0;
+  color: #7f8c8d;
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
